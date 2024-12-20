@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", serif;
+  background-color: #2b2738;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+  width: 100%;
+}
+.container .right {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-image: url("../../assets/mount.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: inherit;
+}
+.container .right .right--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.container .right .right--header .site--logo h1 {
+  font-family: "Monoton", serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.container .right .right--header .back--to--site .back--anchor {
+  width: 100px;
+  background: rgba(10, 35, 75, 0.2941176471);
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s linear;
+}
+.container .right .right--header .back--to--site .back--anchor:hover {
+  background: #0a234b;
+}
+.container .right .right--footer {
+  position: relative;
+  width: 50%;
+  height: 80vh;
+  margin: 0 auto;
+}
+.container .right .right--footer p {
+  position: absolute;
+  bottom: 70px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+}
+.container .right .right--footer button {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  width: 40px;
+  height: 2px;
+}
+.container .left .left--panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.container .left .left--panel form > div {
+  padding: 10px 0;
+}
+.container .left .left--panel form h1 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.container .left .left--panel form p {
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #aaa3a3;
+}
+.container .left .left--panel form p a {
+  color: #6e54b5;
+}
+.container .left .left--panel form input[type=text] {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 200px;
+  padding: 8px;
+  background-color: #3b364c;
+  color: #fff;
+  font-size: 14px;
+}
+.container .left .left--panel form input[type=email],
+.container .left .left--panel form input[type=password] {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  background-color: #3b364c;
+  color: #fff;
+  font-size: 14px;
+}
+.container .left .left--panel form input:focus {
+  border: 1px solid #6e54b5;
+}
+.container .left .left--panel form input:active {
+  border: 1px solid #6e54b5;
+}
+.container .left .left--panel form .terms-cond {
+  font-size: 12px;
+  color: #fff;
+}
+.container .left .left--panel form button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #6e54b5;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+}
+.container .left .left--panel form .lines {
+  position: relative;
+}
+.container .left .left--panel form .lines .r-line::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 150px;
+  left: 0;
+  bottom: 50%;
+  background-color: #fff;
+}
+.container .left .left--panel form .lines .r-line::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 150px;
+  right: 0;
+  bottom: 50%;
+  background-color: #fff;
+}
+.container .left .left--panel form .lines .r-line p {
+  text-align: center;
+}
+.container .left .left--panel form .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .left .left--panel form .social a {
+  width: 180px;
+  border: 1px solid #fff;
+  padding: 6px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: all 0.2s linear;
+}
+.container .left .left--panel form .social a:hover {
+  background-color: #6e54b5;
+}
+.container .left .left--panel form .social a i {
+  padding-right: 8px;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=main.css.map */
